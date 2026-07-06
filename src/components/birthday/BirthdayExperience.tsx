@@ -31,6 +31,7 @@ import k3 from "@/assets/kanishka/kanishka3.jpeg";
 import k4 from "@/assets/kanishka/kanishka4.jpeg";
 import k5 from "@/assets/kanishka/kanishka5.jpeg";
 import k6 from "@/assets/kanishka/kanishka6.jpeg";
+import memoryLaneSong from "@/assets/kanishka/laedoob.mp3";
 
 // Replace image sources with Kanishka's photos anytime
 const PHOTOS: { src: string; caption: string }[] = [
@@ -307,6 +308,18 @@ function PhotoMemories({ onNext }: { onNext: () => void }) {
   const [index, setIndex] = useState(0);
   const photo = PHOTOS[index];
   const isLast = index === PHOTOS.length - 1;
+
+  useEffect(() => {
+    const audio = new Audio(memoryLaneSong);
+    audio.loop = true;
+    audio.volume = 0.5;
+    audio.play().catch(() => {});
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
+
   return (
     <motion.section {...fadeUp} className="text-center max-w-3xl mx-auto w-full">
       <h2 className="font-display text-3xl md:text-5xl text-plum mb-2">Memory lane 💗</h2>
