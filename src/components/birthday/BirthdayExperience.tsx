@@ -25,21 +25,21 @@ const fadeUp = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
 };
 
-import k1 from "@/assets/kanishka/k1.asset.json";
-import k2 from "@/assets/kanishka/k2.asset.json";
-import k3 from "@/assets/kanishka/k3.asset.json";
-import k4 from "@/assets/kanishka/k4.asset.json";
-import k5 from "@/assets/kanishka/k5.asset.json";
-import k6 from "@/assets/kanishka/k6.asset.json";
+import k1 from "@/assets/kanishka/kanishka1.jpeg";
+import k2 from "@/assets/kanishka/kanishka2.jpeg";
+import k3 from "@/assets/kanishka/kanishka3.jpeg";
+import k4 from "@/assets/kanishka/kanishka4.jpeg";
+import k5 from "@/assets/kanishka/kanishka5.jpeg";
+import k6 from "@/assets/kanishka/kanishka6.jpeg";
 
 // Replace image sources with Kanishka's photos anytime
 const PHOTOS: { src: string; caption: string }[] = [
-  { src: k1.url, caption: "Pretty as always 🎀" },
-  { src: k2.url, caption: "This smile >>> 💗" },
-  { src: k3.url, caption: "Main character energy ✨" },
-  { src: k4.url, caption: "Okay, this one's actually cute 😌" },
-  { src: k5.url, caption: "Certified Kanishka moment 😂" },
-  { src: k6.url, caption: "Too much cuteness in one frame 🎀" },
+  { src: k1, caption: "Pretty as always 🎀" },
+  { src: k2, caption: "This smile >>> 💗" },
+  { src: k3, caption: "Main character energy ✨" },
+  { src: k4, caption: "Okay, this one's actually cute 😌" },
+  { src: k5, caption: "Certified Kanishka moment 😂" },
+  { src: k6, caption: "Too much cuteness in one frame 🎀" },
 ];
 
 export default function BirthdayExperience() {
@@ -738,7 +738,7 @@ function FinalScreen({ onReplay, onLast }: { onReplay: () => void; onLast: () =>
 
       <div className="mt-16 pt-8 border-t border-plum/20">
         <p className="text-sm text-plum/70">
-          Made with lots of effort, a little coding magic ✨ and good wishes
+          Made with lots of effort, a little love magic ✨ and good wishes
         </p>
         <p className="font-script text-2xl text-gradient mt-2">— Tushar 💗</p>
       </div>
