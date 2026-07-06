@@ -25,16 +25,21 @@ const fadeUp = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
 };
 
+import k1 from "@/assets/kanishka/k1.asset.json";
+import k2 from "@/assets/kanishka/k2.asset.json";
+import k3 from "@/assets/kanishka/k3.asset.json";
+import k4 from "@/assets/kanishka/k4.asset.json";
+import k5 from "@/assets/kanishka/k5.asset.json";
+import k6 from "@/assets/kanishka/k6.asset.json";
+
 // Replace image sources with Kanishka's photos anytime
 const PHOTOS: { src: string; caption: string }[] = [
-  { src: "", caption: "Pretty as always 🎀" },
-  { src: "", caption: "This smile >>> 💗" },
-  { src: "", caption: "Main character energy ✨" },
-  { src: "", caption: "Okay, this one's actually cute 😌" },
-  { src: "", caption: "Certified Kanishka moment 😂" },
-  { src: "", caption: "Too much cuteness in one frame 🎀" },
-  { src: "", caption: "Sunshine in human form ☀️" },
-  { src: "", caption: "Aesthetic overload 💫" },
+  { src: k1.url, caption: "Pretty as always 🎀" },
+  { src: k2.url, caption: "This smile >>> 💗" },
+  { src: k3.url, caption: "Main character energy ✨" },
+  { src: k4.url, caption: "Okay, this one's actually cute 😌" },
+  { src: k5.url, caption: "Certified Kanishka moment 😂" },
+  { src: k6.url, caption: "Too much cuteness in one frame 🎀" },
 ];
 
 export default function BirthdayExperience() {
