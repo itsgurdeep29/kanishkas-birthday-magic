@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Gift, Heart, Sparkles as SparkIcon, Cake, Mail, Star, ChevronRight, RotateCcw } from "lucide-react";
+import { Sparkles as SparkIcon, ChevronRight, RotateCcw } from "lucide-react";
 import { FloatingBackground, Sparkles, CursorParticles, MusicToggle } from "./Effects";
 import { burstConfetti, megaConfetti, heartExplosion } from "./confetti";
 
